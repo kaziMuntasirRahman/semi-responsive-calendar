@@ -82,7 +82,6 @@ footer{
 
 footer .description{
   font-size: 1.5rem;
-  margin: 0 30px;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -98,7 +97,7 @@ footer .logo{
   }
 
   .calendar-body{
-    padding: 50px;
+    padding: 30px;
   }
 
   .calendar-body .calendar-banner{
