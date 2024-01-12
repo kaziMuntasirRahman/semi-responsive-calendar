@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* width: 100vw; */
+  height: 90%;
+}
+
+#calendar-banner {
+  width: 100%;
+  height: 100%;
+}
+
+
+.calendar-body {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0px 20px;
+  padding: 120px;
+}
+
+.box {
+  /* background-color: aquamarine; */
+  /* border: 2px solid black; */
+  font-size: 2rem;
+}
+
+.box:not(first-child):nth-child(-n+8){
+  font-weight: 900;
+}
+.calendar-body>h1 {
+  grid-column: span 7;
+  font-size: 5rem;
+  font-weight: 900;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(160, 0, 0);
+  margin-bottom: 40px;
+  letter-spacing: 20px;
+}
+
+.box:nth-child(2), .box:nth-child(7n+3):not(:nth-child(3)) {
+  color: red;
+}
+
+.calendar-body>hr {
+  grid-column: span 7;
+  width: 90%;
+  background-color: bisque;
+  border: 0.1px solid rgb(187, 187, 187);
+  /* 1px solid black line */
+  margin: 0 auto;
+  /* Adjust margin as needed */
+}
+
+
+/* footer section start */
+
+footer{
+  background-color: deepskyblue;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 30px; */
+}
+
+footer .description{
+  font-size: 1.5rem;
+  margin: 0 30px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer .logo{
+  height: 40%;
+  width: auto;
+}
+
+/* style for mobile */
+@media screen and (max-width:786px) {
+  main{
+    grid-template-columns: 1fr;
+  }
+}
