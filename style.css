@@ -95,4 +95,12 @@ footer .logo{
   main{
     grid-template-columns: 1fr;
   }
+
+  main .calendar-body{
+    padding: 0;
+  }
+
+  .calendar-body .calendar-banner{
+    width: 100vw;
+  }
 }
