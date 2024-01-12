@@ -113,9 +113,15 @@ footer .logo{
     font-size: 1rem;
   }
 
-  .footer-description{
-    font-size: .6rem;
-    margin: 0 5px;
+  footer{
+    padding: 0 30px;
   }
 
+  footer .description{
+    font-size: 1rem;
+  }
+
+  footer .logo{
+    height: 20%;
+  }
 }
