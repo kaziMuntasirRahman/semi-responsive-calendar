@@ -71,6 +71,7 @@ main {
 /* footer section start */
 
 footer{
+  width: 100vh;
   background-color: deepskyblue;
   display: flex;
   color: white;
