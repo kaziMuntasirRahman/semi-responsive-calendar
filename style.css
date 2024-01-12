@@ -71,7 +71,7 @@ main {
 /* footer section start */
 
 footer{
-  width: 100vh;
+  width: 100vw;
   background-color: deepskyblue;
   display: flex;
   color: white;
@@ -97,7 +97,7 @@ footer .logo{
     grid-template-columns: 1fr;
   }
 
-  main .calendar-body{
+  .calendar-body{
     padding: 0;
   }
 
