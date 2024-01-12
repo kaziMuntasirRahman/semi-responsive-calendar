@@ -98,10 +98,24 @@ footer .logo{
   }
 
   .calendar-body{
-    padding: 0;
+    padding: 50px;
   }
 
   .calendar-body .calendar-banner{
     width: 100vw;
   }
+
+  .calendar-body>h1{
+    font-size: 1.5rem;
+  }
+
+  .box{
+    font-size: 1rem;
+  }
+
+  .footer-description{
+    font-size: .6rem;
+    margin: 0 5px;
+  }
+
 }
